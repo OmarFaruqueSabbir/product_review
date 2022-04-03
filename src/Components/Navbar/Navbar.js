@@ -1,58 +1,61 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import logo from '../../images/wristwatch.png'
+import LinkCustom from "../LinkCustom/LinkCustom";
+
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div>
+
       <nav className="bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
 
-              <div className="flex-shrink-0">
+              <div className="flex items-center flex-shrink-0">
                 <img
                   className="h-9 w-9"
                   src= {logo}
                   alt="Workflow"
                 />
+                  <h1 className="text-white text-2xl font-mono ml-5"> Watch World</h1>
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <a
-                    href="#a"
+                  <LinkCustom
+                    to = '/home'
                     className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     HOME
-                  </a>
+                  </LinkCustom>
 
-                  <a
-                    href="#a"
+                  <LinkCustom
+                    to = '/reviews'
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     REVIEWS
-                  </a>
+                  </LinkCustom>
 
-                  <a
-                    href="#a"
+                  <LinkCustom
+                    to='/dashboard'
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     DASHBOARD
-                  </a>
+                  </LinkCustom>
 
-                  <a
-                    href="#p"
+                  <LinkCustom
+                    to = '/blogs'
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     BLOGS
-                  </a>
+                  </LinkCustom>
 
-                  <a
-                    href="#p"
+                  <LinkCustom
+                    to ='/about'
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     ABOUT
-                  </a>
+                  </LinkCustom>
                 </div>
               </div>
 
@@ -115,40 +118,40 @@ function Navbar() {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a
-                  href="#p"
+                <LinkCustom
+                  to = '/home'
                   className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Dashboard
-                </a>
+                  HOME
+                </LinkCustom>
 
-                <a
+                <LinkCustom
+                  to = '/reviews'
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  REVIEWS
+                </LinkCustom>
+
+                <LinkCustom
                   href="#p"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Team
-                </a>
+                  DASHBOARD
+                </LinkCustom>
 
-                <a
-                  href="#p"
+                <LinkCustom
+                  to = '/blogs'
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Projects
-                </a>
+                  BLOGS
+                </LinkCustom>
 
-                <a
-                  href="#p"
+                <LinkCustom
+                  to ='/about'
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Calendar
-                </a>
-
-                <a
-                  href="#p"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Reports
-                </a>
+                  ABOUT
+                </LinkCustom>
               </div>
             </div>
           )}
@@ -156,7 +159,7 @@ function Navbar() {
       </nav>
 
 
-    </div>
+
   );
 }
 
