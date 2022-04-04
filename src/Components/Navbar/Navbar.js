@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import logo from '../../images/wristwatch.png'
 import LinkCustom from "../LinkCustom/LinkCustom";
-import { Link } from "react-router-dom";
+
 
 
 function Navbar() {
