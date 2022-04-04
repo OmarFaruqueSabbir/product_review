@@ -4,6 +4,7 @@ import { useReview } from '../../hooks/useReview';
 import watch from '../../images/watch1.jpg'
 import ReviewHome from '../ReviewHome/ReviewHome';
 
+
 const Home = () => {
     const [reviews, setReviews] = useReview([]);
     return (
@@ -38,7 +39,7 @@ const Home = () => {
             </div>
 
             <Link to='/reviews'>
-            <div className='mt-3 mb-3'>
+            <div className='mt-5 mb-10'>
                 <button className='bg-black p-3 border rounded-r-lg rounded-l-lg text-white text-xl mt-3'>More Reviews</button>
             </div>
             </Link>
