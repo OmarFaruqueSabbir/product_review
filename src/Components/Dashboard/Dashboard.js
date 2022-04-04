@@ -1,5 +1,5 @@
 import React from 'react';
-import { Area, AreaChart, Bar, BarChart, CartesianGrid, Cell, Legend, Line, LineChart, Pie, PieChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, AreaChart, Bar, BarChart, CartesianGrid,  Legend, Line, LineChart,  Tooltip, XAxis, YAxis } from 'recharts';
 
 const Dashboard = () => {
     const data = [
@@ -40,7 +40,7 @@ const Dashboard = () => {
             "revenue": 710000
         }
     ]
-    const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
+
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto">
             <div className='flex flex-col justify-center items-center mt-5'>

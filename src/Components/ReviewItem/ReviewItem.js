@@ -16,9 +16,9 @@ const ReviewItem = ({review}) => {
 
             </div>
             <div className=' flex flex-col justify-end'>
-              <h3 className='text-gray-600 text-xl font-medium'>{name}</h3>
-              <h5 className='text-gray-600 text-l font-mono'>{reviewTtl}</h5>
-              <span className='text-gray-400 text-xs text-left font-mono'>{comment}</span>
+              <h3 className='text-gray-600 text-xl font-bold'>{name}</h3>
+              <h5 className='text-gray-600 text-l font-semibold font-mono'>{reviewTtl}</h5>
+              <span className='text-gray-500 text-xs text-left font-mono'>{comment}</span>
             </div>
           </div>
       </div>
