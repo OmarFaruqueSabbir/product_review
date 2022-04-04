@@ -119,40 +119,40 @@ function Navbar() {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <Link
+                  <LinkCustom
                     to = '/home'
                     className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     HOME
-                  </Link>
+                  </LinkCustom>
 
-                <Link
+                <LinkCustom
                   to = '/reviews'
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   REVIEWS
-                </Link>
+                </LinkCustom>
 
-                <Link
+                <LinkCustom
                   to="/dashboard"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   DASHBOARD
-                </Link>
+                </LinkCustom>
 
-                <Link
+                <LinkCustom
                   to = '/blogs'
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   BLOGS
-                </Link>
+                </LinkCustom>
 
-                <Link
+                <LinkCustom
                   to ='/about'
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   ABOUT
-                </Link>
+                </LinkCustom>
               </div>
             </div>
           )}
