@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from  './Components/Navbar/Navbar'
 import { Route, Routes } from 'react-router-dom';
@@ -7,6 +6,7 @@ import Reviews from './Components/Reviews/Reviews';
 import Dashboard from './Components/Dashboard/Dashboard';
 import About from './Components/About/About';
 import Blogs from './Components/Blogs/Blogs';
+import Error from './Components/Error/Error';
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
         <Route path='/blogs' element={<Blogs />} />
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/about' element={<About />} />
+        <Route path='*' element={<Error />} />
       </Routes>
 
 

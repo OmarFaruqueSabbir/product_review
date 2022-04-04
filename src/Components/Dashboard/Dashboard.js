@@ -1,5 +1,5 @@
 import React from 'react';
-import { Area, AreaChart, Bar, BarChart, CartesianGrid,  Legend, Line, LineChart,  Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, AreaChart, Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
 
 const Dashboard = () => {
     const data = [
@@ -41,9 +41,11 @@ const Dashboard = () => {
         }
     ]
 
+
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto">
             <div className='flex flex-col justify-center items-center mt-5'>
+            <p className='text-indigo-700 text-lg font-semibold'>Sell in Months</p>
                 <LineChart width={350} height={250} data={data}>
                     <Line
                         type="monotone"
@@ -55,10 +57,10 @@ const Dashboard = () => {
                     <XAxis dataKey={'month'}></XAxis>
                     <Tooltip></Tooltip>
                 </LineChart>
-                <p className='text-indigo-700 text-lg font-semibold'>Sell in Months</p>
             </div>
 
             <div className='flex flex-col justify-center items-center mt-5'>
+            <p className='text-indigo-700 text-lg font-semibold'>Investment vs Revenue</p>
                 <AreaChart
                     width={350}
                     height={250}
@@ -78,10 +80,10 @@ const Dashboard = () => {
                     <Area type="monotone" dataKey="investment" stroke="#8884d8" fill="#8884d8" />
 
                 </AreaChart>
-                <p className='text-indigo-700 text-lg font-semibold'>Investment vs Revenue</p>
             </div>
 
             <div className='flex flex-col justify-center items-center mt-5'>
+            <p className='text-indigo-700 text-lg font-semibold'>Investment vs Revenue</p>
                 <BarChart
                     width={370}
                     height={300}
@@ -101,14 +103,7 @@ const Dashboard = () => {
                     <Bar dataKey="investment" stackId="a" fill="#8884d8" />
                     <Bar dataKey="revenue" stackId="a" fill="#82ca9d" />
                 </BarChart>
-                <p className='text-indigo-700 text-lg font-semibold'>Investment vs Revenue</p>
             </div>
-
-
-
-
-
-
         </div>
 
     );
