@@ -1,6 +1,7 @@
 import React from 'react';
 import { useReview } from '../../hooks/useReview';
 import watch from '../../images/watch1.jpg'
+import ReviewHome from '../ReviewHome/ReviewHome';
 
 const Home = () => {
     const [reviews, setReviews] = useReview([]);
@@ -27,29 +28,9 @@ const Home = () => {
             <div className='grid grid-cols-1 md:grid-cols-3 gap-4 justify-items-center'>
                 {
                     reviews.slice(0, 3).map((review) => (
-                        <div >
-                            <div className='shadow-lg rounded-2xl w-[350px] bg-white p-4 mt-5'>
-                                <div className='gap-4 flex flex-col justify-between items-center'>
-                                    <div className='flex-shrink-0'>
-
-                                        <img
-                                            alt='profile'
-                                            src={review.img}
-                                            className='mx-auto object-cover rounded-full h-20 w-20 '
-                                        />
-
-                                    </div>
-                                    <div className=' flex flex-col justify-end'>
-                                        <h3 className='text-gray-600 text-xl font-medium'>{review.name}</h3>
-                                        <h5 className='text-gray-600 text-l font-mono'>{review.reviewTtl}</h5>
-                                        <span className='text-gray-400 text-xs text-left font-mono'>{review.comment}</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    ))
+                    <ReviewHome key={review.id} review={review}>
+                    </ReviewHome>)
+                    )
                 }
             </div>
         </section>

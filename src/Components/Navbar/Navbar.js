@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import logo from '../../images/wristwatch.png'
 import LinkCustom from "../LinkCustom/LinkCustom";
+import { Link } from "react-router-dom";
 
 
 function Navbar() {
@@ -118,40 +119,40 @@ function Navbar() {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <LinkCustom
-                  to = '/home'
-                  className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  HOME
-                </LinkCustom>
+              <Link
+                    to = '/home'
+                    className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >
+                    HOME
+                  </Link>
 
-                <LinkCustom
+                <Link
                   to = '/reviews'
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   REVIEWS
-                </LinkCustom>
+                </Link>
 
-                <LinkCustom
-                  href="#p"
+                <Link
+                  to="/dashboard"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   DASHBOARD
-                </LinkCustom>
+                </Link>
 
-                <LinkCustom
+                <Link
                   to = '/blogs'
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   BLOGS
-                </LinkCustom>
+                </Link>
 
-                <LinkCustom
+                <Link
                   to ='/about'
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   ABOUT
-                </LinkCustom>
+                </Link>
               </div>
             </div>
           )}
