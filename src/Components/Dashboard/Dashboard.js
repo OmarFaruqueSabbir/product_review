@@ -44,7 +44,7 @@ const Dashboard = () => {
 
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3  mx-auto">
-            <div className='flex flex-col justify-center md:items-center items-start mt-5 mb-5'>
+            <div className='flex flex-col justify-center items-center mt-5 mb-5'>
                 <p className='text-indigo-700 text-lg font-semibold mb-3'>Sell in Months</p>
                 <LineChart width={330} height={250} data={data}>
                     <Line
@@ -60,7 +60,7 @@ const Dashboard = () => {
                 </LineChart>
             </div>
 
-            <div className='flex flex-col justify-center md:items-center items-start mt-5 mb-5'>
+            <div className='flex flex-col justify-center items-center mt-5 mb-5'>
                 <p className='text-indigo-700 text-lg font-semibold mb-3'>Investment vs Revenue</p>
                 <AreaChart
                     width={330}
@@ -84,17 +84,18 @@ const Dashboard = () => {
                 </AreaChart>
             </div>
 
-            <div className='flex flex-col justify-center md:items-center items-start mt-5 mb-5'>
+            <div className='flex flex-col justify-center items-center  mt-5 mb-5'>
                 <p className='text-indigo-700 text-lg font-semibold mb-3'>Investment vs Revenue</p>
                 <PieChart className='flex' width={300} height={250}>
                     <Pie data={data} dataKey="investment" nameKey="month" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
                     <Pie data={data} dataKey="revenue" nameKey="month" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#82ca9d" label />
+                    <Legend />
                     <Tooltip />
 
                 </PieChart>
             </div>
 
-            <div className='flex flex-col justify-center md:items-center items-start mt-5 mb-5'>
+            <div className='flex flex-col justify-center items-center  mt-5 mb-5'>
                 <p className='text-indigo-700 text-lg font-semibold mb-3'>Investment vs Revenue</p>
                 <BarChart
                     width={330}
