@@ -4,44 +4,48 @@
       "name": "Alex",
       "img": "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       "reviewTtl": "Student",
-      "comment": "Customer Service is amazing. Unboxing my new watch thrilled me,as i waited long for it. Gonna shop again from watch world."
-
+      "comment": "Customer Service is amazing. Unboxing my new watch thrilled me,as i waited long for it. Gonna shop again from watch world.",
+      "rating": 4
     },
     {
       "id": "C2",
       "name": "Galib",
       "img": "https://images.unsplash.com/photo-1558203728-00f45181dd84?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80",
       "reviewTtl": "graphics designer",
-      "comment": "Their Service is very cool. Got my new watch within 2 days & guess what, it was worth spending. Will buy again from Watch World."
-
+      "comment": "Their Service is very cool. Got my new watch within 2 days & guess what, it was worth spending. Will buy again from Watch World.",
+      "rating": 4
     },
     {
       "id": "C3",
       "name": "Ortha",
       "img": "https://images.unsplash.com/photo-1526080652727-5b77f74eacd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80",
       "reviewTtl": "Writer",
-      "comment": "I was thinking to buy new watch for my brother. Here I got cool designed watches.Just got lost in collections but managed to get desired one."
+      "comment": "I was thinking to buy new watch for my brother. Here I got cool designed watches.Just got lost in collections but managed to get desired one.",
+      "rating": 3.5
     },
     {
       "id": "C4",
       "name": "Parsia",
       "img": "https://images.unsplash.com/photo-1490195117352-aa267f47f2d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "reviewTtl": "Fashion Analyst",
-      "comment": "One of my friend suggested them. Have to say they got so exclusive collection. I just bought new seiko l8 for me. Highly recommended for watch lover like me."
+      "comment": "One of my friend suggested them. Have to say they got so exclusive collection. I just bought new seiko l8 for me. Highly recommended for watch lover like me.",
+      "rating": 5
     },
     {
       "id": "F5",
       "name": "Labib",
       "img": "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80",
       "reviewTtl": "A Old Customer..",
-      "comment": "Customer Service is as always amazing. I bought my first casio g56 from watch world. Since then I just get in here whenever i need."
+      "comment": "Customer Service is as always amazing. I bought my first casio g56 from watch world. Since then I just get in here whenever i need.",
+      "rating": 5
     },
     {
       "id": "C6",
       "name": "Pears",
       "img": "https://images.unsplash.com/photo-1504899567410-7501a313cadd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       "reviewTtl": "Blogger",
-      "comment": "I'm from USA. One of my friend from Bangladesh gifted a exclusive watch from Watch World. Just got being fan of their collections."
+      "comment": "I'm from USA. One of my friend from Bangladesh gifted a exclusive watch from Watch World. Just got being fan of their collections.",
+      "rating": 4
     }
 
 ]

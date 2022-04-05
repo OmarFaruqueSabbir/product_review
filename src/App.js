@@ -8,6 +8,7 @@ import About from './Components/About/About';
 import Blogs from './Components/Blogs/Blogs';
 import Error from './Components/Error/Error';
 
+
 function App() {
   return (
     <div className="App">
@@ -22,9 +23,6 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='*' element={<Error />} />
       </Routes>
-
-
-
     </div>
   );
 }
