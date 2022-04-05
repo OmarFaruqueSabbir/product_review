@@ -1,10 +1,10 @@
-## Watch World
+# Watch World
 
-Watch World, a website for watches to buy...
+WATCH WORLD, a website for 'watches' to shop & get exclusive collections...
 
-### Live Site Link: 
+## Live Site Link: 
 
-
+https://product-analysis-website-omarfaruquesabbir.netlify.app
 
 ## Features
 
